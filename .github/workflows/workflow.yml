@@ -65,8 +65,8 @@ jobs:
         run: |
           dotnet tool install --global dotnet-ef --version 3.1.3
           dotnet ef database update
-        env:
-          ConnectionStrings__MyDbConnection: ${{ env.SQL_DB_CONN_STR }}
+        #env:
+          #ConnectionStrings__MyDbConnection: ${{ env.SQL_DB_CONN_STR }}
       
       - name: Swap to production slot
         run: |
